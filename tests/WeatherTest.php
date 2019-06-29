@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: bertshang
  * Date: 2019/6/29
- * Time: 14:41
+ * Time: 14:41.
  */
 
 namespace Bertshang\Weather\Tests;
@@ -17,8 +17,8 @@ use Bertshang\Weather\Exceptions\InvalidArgumentException;
 use Bertshang\Weather\Weather;
 use PHPUnit\Framework\TestCase;
 
-class WeatherTest extends TestCase {
-
+class WeatherTest extends TestCase
+{
     public function testGetWeather()
     {
         // 创建模拟接口响应值。
@@ -33,7 +33,7 @@ class WeatherTest extends TestCase {
                 'city' => '深圳',
                 'output' => 'json',
                 'extensions' => 'base',
-            ]
+            ],
         ])->andReturn($response);
 
         // 将 `getHttpClient` 方法替换为上面创建的 http client 为返回值的模拟方法。
@@ -101,7 +101,8 @@ class WeatherTest extends TestCase {
     }
 
     // 检查 $type 参数
-    public function testGetWeatherWithInvalidType() {
+    public function testGetWeatherWithInvalidType()
+    {
         $w = new Weather('mock-key');
         //断言异常消息
         $this->expectException(InvalidArgumentException::class);
@@ -111,7 +112,8 @@ class WeatherTest extends TestCase {
         $this->fail('Failed to assert getWeather throw exception with invalid argument.');
     }
 
-    public function testGetWeatherWithInvalidFormat() {
+    public function testGetWeatherWithInvalidFormat()
+    {
         $w = new Weather('mock-key');
         //断言异常消息
         $this->expectException(InvalidArgumentException::class);
