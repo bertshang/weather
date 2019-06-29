@@ -2,7 +2,8 @@
 
 <p align="center"> a Weather SDK.</p>
 
-[![Build Status](https://travis-ci.org/bertshang/weather.svg?branch=master)](https://travis-ci.org/bertshang/weather)
+[![Build Status](https://travis-ci.org/bertshang/weather.svg?branch=master)](https://travis-ci.org/bertshang/weather) 
+[![StyleCI build status](https://github.styleci.io/repos/194388119/shield)](https://github.styleci.io/repos/194388119)
 
 ## Installing
 
